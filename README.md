@@ -95,13 +95,14 @@ How it works in this project:
    !unzip -q Dataset-example.zip -d /content/mp/mask_project/
 
 3. Check folder structure:
-
+ ```python
 !ls /content/mp/mask_project/Dataset-example
 !ls /content/mp/mask_project/Dataset-example/with_mask
 !ls /content/mp/mask_project/Dataset-example/without_mask
 
-4. Set the dataset path in code:
+```
 
+4. Set the dataset path in code:
 dataset_path = "/content/mp/mask_project/Dataset-example"
 
 5. Run the training cells:
