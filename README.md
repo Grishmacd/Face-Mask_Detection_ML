@@ -92,8 +92,7 @@ How it works in this project:
    
 2. Unzip the dataset:
    ```python
-
-!unzip -q Dataset-example.zip -d /content/mp/mask_project/
+   !unzip -q Dataset-example.zip -d /content/mp/mask_project/
 
 3. Check folder structure:
 
