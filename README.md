@@ -102,9 +102,9 @@ How it works in this project:
    ```
 
 4. Set the dataset path in code:
-  ```python
+   ```python
     dataset_path = "/content/mp/mask_project/Dataset-example"
-  ```
+   ```
  
 5. Run the training cells:
 
