@@ -91,6 +91,7 @@ How it works in this project:
    files.upload()
    
 2. Unzip the dataset:
+   ```python
 
 !unzip -q Dataset-example.zip -d /content/mp/mask_project/
 
