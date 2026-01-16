@@ -83,44 +83,34 @@ How it works in this project:
    - Split dataset into train and test sets with stratification.
 
 ---
+## How to Run (Colab)
 
-## How to Run (Colab: Upload ZIP → Unzip → Train)
-
-### 1) Upload your dataset ZIP
-```python
-from google.colab import files
-files.upload()  # upload Dataset-example.zip (or your zip name)
-tep 2: Unzip it to your folder
-
-Replace Dataset-example.zip with your zip file name:
+1. Upload the dataset ZIP:
+   ```python
+   from google.colab import files
+   files.upload()
+   
+2. Unzip the dataset:
 
 !unzip -q Dataset-example.zip -d /content/mp/mask_project/
 
-Step 3: Confirm dataset folders exist
+3. Check folder structure:
+
 !ls /content/mp/mask_project/Dataset-example
 !ls /content/mp/mask_project/Dataset-example/with_mask
 !ls /content/mp/mask_project/Dataset-example/without_mask
 
-Step 4: Set the dataset path in code
+4. Set the dataset path in code:
+
 dataset_path = "/content/mp/mask_project/Dataset-example"
 
-Step 5: Run training cells
+5. Run the training cells:
 
-Run the training code. After training:
+- Train the model  
+- Evaluate accuracy  
+- Model saves as `mask_model_mobilenet.h5`  
 
-Final accuracy prints
+---
 
-Model saves as mask_model_mobilenet.h5
-
-Output
-
-Training logs (accuracy + validation accuracy)
-
-Printed final test accuracy
-
-Saved model file: mask_model_mobilenet.h5
-
-Developer
-
+## Developer
 Grishma C.D
-
